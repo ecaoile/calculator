@@ -54,11 +54,11 @@
             // 
             // Result_Textbox
             // 
-            this.Result_Textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.Result_Textbox.Location = new System.Drawing.Point(12, 11);
+            this.Result_Textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.Result_Textbox.Location = new System.Drawing.Point(12, 15);
             this.Result_Textbox.Multiline = true;
             this.Result_Textbox.Name = "Result_Textbox";
-            this.Result_Textbox.Size = new System.Drawing.Size(600, 112);
+            this.Result_Textbox.Size = new System.Drawing.Size(498, 112);
             this.Result_Textbox.TabIndex = 0;
             this.Result_Textbox.Text = "0";
             this.Result_Textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -68,9 +68,9 @@
             // 
             this.ZeroButton.BackColor = System.Drawing.Color.AliceBlue;
             this.ZeroButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.ZeroButton.Location = new System.Drawing.Point(206, 567);
+            this.ZeroButton.Location = new System.Drawing.Point(138, 567);
             this.ZeroButton.Name = "ZeroButton";
-            this.ZeroButton.Size = new System.Drawing.Size(100, 100);
+            this.ZeroButton.Size = new System.Drawing.Size(120, 100);
             this.ZeroButton.TabIndex = 1;
             this.ZeroButton.Text = "0";
             this.ZeroButton.UseVisualStyleBackColor = false;
@@ -80,9 +80,9 @@
             // 
             this.oneButton.BackColor = System.Drawing.Color.AliceBlue;
             this.oneButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.oneButton.Location = new System.Drawing.Point(100, 461);
+            this.oneButton.Location = new System.Drawing.Point(12, 461);
             this.oneButton.Name = "oneButton";
-            this.oneButton.Size = new System.Drawing.Size(100, 100);
+            this.oneButton.Size = new System.Drawing.Size(120, 100);
             this.oneButton.TabIndex = 2;
             this.oneButton.Text = "1";
             this.oneButton.UseVisualStyleBackColor = false;
@@ -92,9 +92,9 @@
             // 
             this.two.BackColor = System.Drawing.Color.AliceBlue;
             this.two.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.two.Location = new System.Drawing.Point(206, 461);
+            this.two.Location = new System.Drawing.Point(138, 461);
             this.two.Name = "two";
-            this.two.Size = new System.Drawing.Size(100, 100);
+            this.two.Size = new System.Drawing.Size(120, 100);
             this.two.TabIndex = 3;
             this.two.Text = "2";
             this.two.UseVisualStyleBackColor = false;
@@ -104,9 +104,9 @@
             // 
             this.three.BackColor = System.Drawing.Color.AliceBlue;
             this.three.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.three.Location = new System.Drawing.Point(312, 461);
+            this.three.Location = new System.Drawing.Point(264, 461);
             this.three.Name = "three";
-            this.three.Size = new System.Drawing.Size(100, 100);
+            this.three.Size = new System.Drawing.Size(120, 100);
             this.three.TabIndex = 4;
             this.three.Text = "3";
             this.three.UseVisualStyleBackColor = false;
@@ -116,9 +116,9 @@
             // 
             this.four.BackColor = System.Drawing.Color.AliceBlue;
             this.four.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.four.Location = new System.Drawing.Point(100, 355);
+            this.four.Location = new System.Drawing.Point(12, 355);
             this.four.Name = "four";
-            this.four.Size = new System.Drawing.Size(100, 100);
+            this.four.Size = new System.Drawing.Size(120, 100);
             this.four.TabIndex = 5;
             this.four.Text = "4";
             this.four.UseVisualStyleBackColor = false;
@@ -128,9 +128,9 @@
             // 
             this.five.BackColor = System.Drawing.Color.AliceBlue;
             this.five.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.five.Location = new System.Drawing.Point(206, 355);
+            this.five.Location = new System.Drawing.Point(138, 355);
             this.five.Name = "five";
-            this.five.Size = new System.Drawing.Size(100, 100);
+            this.five.Size = new System.Drawing.Size(120, 100);
             this.five.TabIndex = 6;
             this.five.Text = "5";
             this.five.UseVisualStyleBackColor = false;
@@ -140,9 +140,9 @@
             // 
             this.six.BackColor = System.Drawing.Color.AliceBlue;
             this.six.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.six.Location = new System.Drawing.Point(312, 355);
+            this.six.Location = new System.Drawing.Point(264, 355);
             this.six.Name = "six";
-            this.six.Size = new System.Drawing.Size(100, 100);
+            this.six.Size = new System.Drawing.Size(120, 100);
             this.six.TabIndex = 7;
             this.six.Text = "6";
             this.six.UseVisualStyleBackColor = false;
@@ -152,9 +152,9 @@
             // 
             this.seven.BackColor = System.Drawing.Color.AliceBlue;
             this.seven.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.seven.Location = new System.Drawing.Point(100, 249);
+            this.seven.Location = new System.Drawing.Point(12, 249);
             this.seven.Name = "seven";
-            this.seven.Size = new System.Drawing.Size(100, 100);
+            this.seven.Size = new System.Drawing.Size(120, 100);
             this.seven.TabIndex = 8;
             this.seven.Text = "7";
             this.seven.UseVisualStyleBackColor = false;
@@ -164,9 +164,9 @@
             // 
             this.eight.BackColor = System.Drawing.Color.AliceBlue;
             this.eight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.eight.Location = new System.Drawing.Point(206, 249);
+            this.eight.Location = new System.Drawing.Point(138, 249);
             this.eight.Name = "eight";
-            this.eight.Size = new System.Drawing.Size(100, 100);
+            this.eight.Size = new System.Drawing.Size(120, 100);
             this.eight.TabIndex = 9;
             this.eight.Text = "8";
             this.eight.UseVisualStyleBackColor = false;
@@ -176,9 +176,9 @@
             // 
             this.nine.BackColor = System.Drawing.Color.AliceBlue;
             this.nine.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.nine.Location = new System.Drawing.Point(312, 249);
+            this.nine.Location = new System.Drawing.Point(264, 249);
             this.nine.Name = "nine";
-            this.nine.Size = new System.Drawing.Size(100, 100);
+            this.nine.Size = new System.Drawing.Size(120, 100);
             this.nine.TabIndex = 10;
             this.nine.Text = "9";
             this.nine.UseVisualStyleBackColor = false;
@@ -188,21 +188,21 @@
             // 
             this.plusOrMinus.BackColor = System.Drawing.Color.AliceBlue;
             this.plusOrMinus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.plusOrMinus.Location = new System.Drawing.Point(100, 567);
+            this.plusOrMinus.Location = new System.Drawing.Point(12, 567);
             this.plusOrMinus.Name = "plusOrMinus";
-            this.plusOrMinus.Size = new System.Drawing.Size(100, 100);
+            this.plusOrMinus.Size = new System.Drawing.Size(120, 100);
             this.plusOrMinus.TabIndex = 11;
             this.plusOrMinus.Text = "±";
             this.plusOrMinus.UseVisualStyleBackColor = false;
-            this.plusOrMinus.Click += new System.EventHandler(this.button11_Click);
+            this.plusOrMinus.Click += new System.EventHandler(this.PlusOrMinus_Click);
             // 
             // dec
             // 
             this.dec.BackColor = System.Drawing.Color.AliceBlue;
             this.dec.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.dec.Location = new System.Drawing.Point(312, 567);
+            this.dec.Location = new System.Drawing.Point(264, 567);
             this.dec.Name = "dec";
-            this.dec.Size = new System.Drawing.Size(100, 100);
+            this.dec.Size = new System.Drawing.Size(120, 100);
             this.dec.TabIndex = 12;
             this.dec.Text = ".";
             this.dec.UseVisualStyleBackColor = false;
@@ -212,9 +212,9 @@
             // 
             this.divide.BackColor = System.Drawing.Color.AliceBlue;
             this.divide.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.divide.Location = new System.Drawing.Point(418, 143);
+            this.divide.Location = new System.Drawing.Point(390, 143);
             this.divide.Name = "divide";
-            this.divide.Size = new System.Drawing.Size(100, 100);
+            this.divide.Size = new System.Drawing.Size(120, 100);
             this.divide.TabIndex = 13;
             this.divide.Text = "÷";
             this.divide.UseVisualStyleBackColor = false;
@@ -224,9 +224,9 @@
             // 
             this.multiply.BackColor = System.Drawing.Color.AliceBlue;
             this.multiply.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.multiply.Location = new System.Drawing.Point(418, 249);
+            this.multiply.Location = new System.Drawing.Point(390, 249);
             this.multiply.Name = "multiply";
-            this.multiply.Size = new System.Drawing.Size(100, 100);
+            this.multiply.Size = new System.Drawing.Size(120, 100);
             this.multiply.TabIndex = 14;
             this.multiply.Text = "x";
             this.multiply.UseVisualStyleBackColor = false;
@@ -236,9 +236,9 @@
             // 
             this.subtract.BackColor = System.Drawing.Color.AliceBlue;
             this.subtract.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.subtract.Location = new System.Drawing.Point(418, 355);
+            this.subtract.Location = new System.Drawing.Point(390, 355);
             this.subtract.Name = "subtract";
-            this.subtract.Size = new System.Drawing.Size(100, 100);
+            this.subtract.Size = new System.Drawing.Size(120, 100);
             this.subtract.TabIndex = 15;
             this.subtract.Text = "-";
             this.subtract.UseVisualStyleBackColor = false;
@@ -248,9 +248,9 @@
             // 
             this.add.BackColor = System.Drawing.Color.AliceBlue;
             this.add.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.add.Location = new System.Drawing.Point(418, 461);
+            this.add.Location = new System.Drawing.Point(390, 461);
             this.add.Name = "add";
-            this.add.Size = new System.Drawing.Size(100, 100);
+            this.add.Size = new System.Drawing.Size(120, 100);
             this.add.TabIndex = 16;
             this.add.Text = "+";
             this.add.UseVisualStyleBackColor = false;
@@ -260,9 +260,9 @@
             // 
             this.equals.BackColor = System.Drawing.Color.AliceBlue;
             this.equals.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.equals.Location = new System.Drawing.Point(418, 567);
+            this.equals.Location = new System.Drawing.Point(390, 567);
             this.equals.Name = "equals";
-            this.equals.Size = new System.Drawing.Size(100, 100);
+            this.equals.Size = new System.Drawing.Size(120, 100);
             this.equals.TabIndex = 17;
             this.equals.Text = "=";
             this.equals.UseVisualStyleBackColor = false;
@@ -272,9 +272,9 @@
             // 
             this.clear.BackColor = System.Drawing.Color.AliceBlue;
             this.clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.clear.Location = new System.Drawing.Point(100, 143);
+            this.clear.Location = new System.Drawing.Point(12, 143);
             this.clear.Name = "clear";
-            this.clear.Size = new System.Drawing.Size(100, 100);
+            this.clear.Size = new System.Drawing.Size(120, 100);
             this.clear.TabIndex = 18;
             this.clear.Text = "C";
             this.clear.UseVisualStyleBackColor = false;
@@ -284,20 +284,21 @@
             // 
             this.backspace.BackColor = System.Drawing.Color.AliceBlue;
             this.backspace.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.backspace.Location = new System.Drawing.Point(312, 143);
+            this.backspace.Location = new System.Drawing.Point(264, 143);
             this.backspace.Name = "backspace";
-            this.backspace.Size = new System.Drawing.Size(100, 100);
+            this.backspace.Size = new System.Drawing.Size(120, 100);
             this.backspace.TabIndex = 19;
             this.backspace.Text = "⌫";
             this.backspace.UseVisualStyleBackColor = false;
+            this.backspace.Click += new System.EventHandler(this.Backspace_Click);
             // 
             // clear_entry
             // 
             this.clear_entry.BackColor = System.Drawing.Color.AliceBlue;
             this.clear_entry.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.clear_entry.Location = new System.Drawing.Point(206, 143);
+            this.clear_entry.Location = new System.Drawing.Point(138, 143);
             this.clear_entry.Name = "clear_entry";
-            this.clear_entry.Size = new System.Drawing.Size(100, 100);
+            this.clear_entry.Size = new System.Drawing.Size(120, 100);
             this.clear_entry.TabIndex = 20;
             this.clear_entry.Text = "CE";
             this.clear_entry.UseVisualStyleBackColor = false;
@@ -308,7 +309,7 @@
             this.equation.AutoSize = true;
             this.equation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.equation.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.equation.Location = new System.Drawing.Point(21, 34);
+            this.equation.Location = new System.Drawing.Point(23, 49);
             this.equation.Name = "equation";
             this.equation.Size = new System.Drawing.Size(140, 37);
             this.equation.TabIndex = 21;
@@ -319,7 +320,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(624, 679);
+            this.ClientSize = new System.Drawing.Size(522, 679);
             this.Controls.Add(this.equation);
             this.Controls.Add(this.clear_entry);
             this.Controls.Add(this.backspace);

@@ -30,11 +30,6 @@ namespace Calculator
 
         }
 
-        private void button12_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Number_Click(object sender, EventArgs e)
         {
             if (Result_Textbox.Text == "0" || operation_pressed == true)
@@ -86,5 +81,21 @@ namespace Calculator
             value = 0;
         }
 
+        private void PlusOrMinus_Click(object sender, EventArgs e)
+        {
+            if (Result_Textbox.Text.StartsWith("-"))
+                Result_Textbox.Text = Result_Textbox.Text.Substring(1);
+            else
+                Result_Textbox.Text = "-" + Result_Textbox.Text;
+           
+        }
+
+        private void Backspace_Click(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(Result_Textbox.Text))
+                Result_Textbox.Text = Result_Textbox.Text.Remove(Result_Textbox.Text.Length - 1);
+            if (String.IsNullOrEmpty(Result_Textbox.Text))
+                Result_Textbox.Text = "0";
+        }
     }
 }
