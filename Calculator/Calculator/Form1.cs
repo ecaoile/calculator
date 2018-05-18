@@ -35,21 +35,47 @@ namespace Calculator
             operation_pressed = false;
             hit_equals = false;
             Button b = (Button)sender;
-            Result_Textbox.Text = Result_Textbox.Text + b.Text;
+            if (b.Text == ".")
+            {
+                if (!Result_Textbox.Text.Contains("."))
+                    Result_Textbox.Text = Result_Textbox.Text + b.Text;
+            }
+            else
+                Result_Textbox.Text = Result_Textbox.Text + b.Text;
         }
 
         private void Operator_Click(object sender, EventArgs e)
         {
             Button b = (Button)sender;
-            operation = b.Text;
-
-            if (!String.IsNullOrEmpty(Result_Textbox.Text))
+            if (value != 0)
             {
+                switch (operation)
+                {
+                    case "+":
+                        Result_Textbox.Text = (value + Double.Parse(Result_Textbox.Text)).ToString();
+                        break;
+                    case "-":
+                        Result_Textbox.Text = (value - Double.Parse(Result_Textbox.Text)).ToString();
+                        break;
+                    case "x":
+                        Result_Textbox.Text = (value * Double.Parse(Result_Textbox.Text)).ToString();
+                        break;
+                    case "÷":
+                        Result_Textbox.Text = (value / Double.Parse(Result_Textbox.Text)).ToString();
+                        break;
+                    default:
+                        break;
+                }
                 value = Double.Parse(Result_Textbox.Text);
-                operation_pressed = true;
-                equation.Text = value + " " + operation;
-                //savedEq += equation.Text;
+                operation = b.Text;
             }
+            else
+            {
+                operation = b.Text;
+                value = Double.Parse(Result_Textbox.Text);
+            }
+            operation_pressed = true;
+            equation.Text = value + " " + operation;
         }
 
         private void Equals_Click(object sender, EventArgs e)
@@ -74,6 +100,8 @@ namespace Calculator
                 default:
                     break;
             }
+            value = Double.Parse(Result_Textbox.Text);
+            operation = "";
         }
 
         private void ClearEntry_Click(object sender, EventArgs e)
@@ -84,7 +112,7 @@ namespace Calculator
         private void Clear_Click(object sender, EventArgs e)
         {
             Result_Textbox.Text = "0";
-            //equation.Text = "";
+            equation.Text = "";
             value = 0;
         }
 
