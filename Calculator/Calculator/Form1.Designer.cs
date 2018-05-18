@@ -54,7 +54,7 @@
             // 
             // Result_Textbox
             // 
-            this.Result_Textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.Result_Textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.Result_Textbox.Location = new System.Drawing.Point(12, 15);
             this.Result_Textbox.Multiline = true;
             this.Result_Textbox.Name = "Result_Textbox";
@@ -306,14 +306,16 @@
             // 
             // equation
             // 
-            this.equation.AutoSize = true;
+            this.equation.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.equation.BackColor = System.Drawing.SystemColors.Window;
             this.equation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.equation.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.equation.Location = new System.Drawing.Point(23, 49);
+            this.equation.Location = new System.Drawing.Point(415, 85);
             this.equation.Name = "equation";
-            this.equation.Size = new System.Drawing.Size(140, 37);
+            this.equation.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.equation.Size = new System.Drawing.Size(95, 42);
             this.equation.TabIndex = 21;
-            this.equation.Text = "equation";
+            this.equation.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Form1
             // 

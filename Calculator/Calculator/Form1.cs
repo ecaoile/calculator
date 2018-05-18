@@ -14,7 +14,10 @@ namespace Calculator
     {
         Double value = 0;
         String operation = "";
+        String savedEq = "";
+        //string[] eqArray = new string[] { };
         bool operation_pressed = false;
+        bool hit_equals = false;
         public Form1()
         {
             InitializeComponent();
@@ -25,16 +28,12 @@ namespace Calculator
 
         }
 
-        private void button11_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Number_Click(object sender, EventArgs e)
         {
-            if (Result_Textbox.Text == "0" || operation_pressed == true)
+            if (Result_Textbox.Text == "0" || operation_pressed == true || hit_equals == true)
                 Result_Textbox.Clear();
             operation_pressed = false;
+            hit_equals = false;
             Button b = (Button)sender;
             Result_Textbox.Text = Result_Textbox.Text + b.Text;
         }
@@ -43,14 +42,21 @@ namespace Calculator
         {
             Button b = (Button)sender;
             operation = b.Text;
-            value = Double.Parse(Result_Textbox.Text);
-            operation_pressed = true;
-            equation.Text = value + " " + operation;
+
+            if (!String.IsNullOrEmpty(Result_Textbox.Text))
+            {
+                value = Double.Parse(Result_Textbox.Text);
+                operation_pressed = true;
+                equation.Text = value + " " + operation;
+                //savedEq += equation.Text;
+            }
         }
 
         private void Equals_Click(object sender, EventArgs e)
         {
             equation.Text = "";
+            //savedEq = "";
+            hit_equals = true;
             switch (operation)
             {
                 case "+":
@@ -77,7 +83,8 @@ namespace Calculator
 
         private void Clear_Click(object sender, EventArgs e)
         {
-            Result_Textbox.Clear();
+            Result_Textbox.Text = "0";
+            //equation.Text = "";
             value = 0;
         }
 
