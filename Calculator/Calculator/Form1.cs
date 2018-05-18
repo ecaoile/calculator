@@ -65,10 +65,10 @@ namespace Calculator
                 case "-":
                     Result_Textbox.Text = (value - Double.Parse(Result_Textbox.Text)).ToString();
                     break;
-                case "*":
+                case "x":
                     Result_Textbox.Text = (value * Double.Parse(Result_Textbox.Text)).ToString();
                     break;
-                case "/":
+                case "÷":
                     Result_Textbox.Text = (value / Double.Parse(Result_Textbox.Text)).ToString();
                     break;
                 default:
