@@ -14,7 +14,6 @@ namespace Calculator
     {
         Double value = 0;
         String operation = "";
-        String savedEq = "";
         //string[] eqArray = new string[] { };
         bool operation_pressed = false;
         bool hit_equals = false;
@@ -44,29 +43,34 @@ namespace Calculator
                 Result_Textbox.Text = Result_Textbox.Text + b.Text;
         }
 
+        public double Do_Math(string operation, string resultText, double value)
+        {
+            switch (operation)
+            {
+                case "+":
+                    value = value + Double.Parse(resultText);
+                    break;
+                case "-":
+                    value = value - Double.Parse(resultText);
+                    break;
+                case "x":
+                    value = value * Double.Parse(resultText);
+                    break;
+                case "÷":
+                    value = value / Double.Parse(resultText);
+                    break;
+                default:
+                    break;
+            }
+            return value;         
+        }
+
         private void Operator_Click(object sender, EventArgs e)
         {
             Button b = (Button)sender;
             if (value != 0)
             {
-                switch (operation)
-                {
-                    case "+":
-                        Result_Textbox.Text = (value + Double.Parse(Result_Textbox.Text)).ToString();
-                        break;
-                    case "-":
-                        Result_Textbox.Text = (value - Double.Parse(Result_Textbox.Text)).ToString();
-                        break;
-                    case "x":
-                        Result_Textbox.Text = (value * Double.Parse(Result_Textbox.Text)).ToString();
-                        break;
-                    case "÷":
-                        Result_Textbox.Text = (value / Double.Parse(Result_Textbox.Text)).ToString();
-                        break;
-                    default:
-                        break;
-                }
-                value = Double.Parse(Result_Textbox.Text);
+                value = Do_Math(operation, Result_Textbox.Text, value);
                 operation = b.Text;
             }
             else
@@ -75,31 +79,14 @@ namespace Calculator
                 value = Double.Parse(Result_Textbox.Text);
             }
             operation_pressed = true;
-            equation.Text = value + " " + operation;
+            equation.Text =  value + " " + operation;
         }
 
         private void Equals_Click(object sender, EventArgs e)
         {
             equation.Text = "";
-            //savedEq = "";
             hit_equals = true;
-            switch (operation)
-            {
-                case "+":
-                    Result_Textbox.Text = (value + Double.Parse(Result_Textbox.Text)).ToString();
-                    break;
-                case "-":
-                    Result_Textbox.Text = (value - Double.Parse(Result_Textbox.Text)).ToString();
-                    break;
-                case "x":
-                    Result_Textbox.Text = (value * Double.Parse(Result_Textbox.Text)).ToString();
-                    break;
-                case "÷":
-                    Result_Textbox.Text = (value / Double.Parse(Result_Textbox.Text)).ToString();
-                    break;
-                default:
-                    break;
-            }
+            Result_Textbox.Text = Do_Math(operation, Result_Textbox.Text, value).ToString();
             value = Double.Parse(Result_Textbox.Text);
             operation = "";
         }
