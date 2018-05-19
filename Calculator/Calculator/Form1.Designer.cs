@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.Result_Textbox = new System.Windows.Forms.TextBox();
-            this.ZeroButton = new System.Windows.Forms.Button();
-            this.oneButton = new System.Windows.Forms.Button();
+            this.zero = new System.Windows.Forms.Button();
+            this.one = new System.Windows.Forms.Button();
             this.two = new System.Windows.Forms.Button();
             this.three = new System.Windows.Forms.Button();
             this.four = new System.Windows.Forms.Button();
@@ -58,35 +58,35 @@
             this.Result_Textbox.Location = new System.Drawing.Point(12, 15);
             this.Result_Textbox.Multiline = true;
             this.Result_Textbox.Name = "Result_Textbox";
+            this.Result_Textbox.ReadOnly = true;
             this.Result_Textbox.Size = new System.Drawing.Size(498, 112);
             this.Result_Textbox.TabIndex = 0;
             this.Result_Textbox.Text = "0";
             this.Result_Textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.Result_Textbox.TextChanged += new System.EventHandler(this.Result_Textbox_TextChanged);
             // 
-            // ZeroButton
+            // zero
             // 
-            this.ZeroButton.BackColor = System.Drawing.Color.AliceBlue;
-            this.ZeroButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.ZeroButton.Location = new System.Drawing.Point(138, 567);
-            this.ZeroButton.Name = "ZeroButton";
-            this.ZeroButton.Size = new System.Drawing.Size(120, 100);
-            this.ZeroButton.TabIndex = 1;
-            this.ZeroButton.Text = "0";
-            this.ZeroButton.UseVisualStyleBackColor = false;
-            this.ZeroButton.Click += new System.EventHandler(this.Number_Click);
+            this.zero.BackColor = System.Drawing.Color.AliceBlue;
+            this.zero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.zero.Location = new System.Drawing.Point(138, 567);
+            this.zero.Name = "zero";
+            this.zero.Size = new System.Drawing.Size(120, 100);
+            this.zero.TabIndex = 1;
+            this.zero.Text = "0";
+            this.zero.UseVisualStyleBackColor = false;
+            this.zero.Click += new System.EventHandler(this.Number_Click);
             // 
-            // oneButton
+            // one
             // 
-            this.oneButton.BackColor = System.Drawing.Color.AliceBlue;
-            this.oneButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.oneButton.Location = new System.Drawing.Point(12, 461);
-            this.oneButton.Name = "oneButton";
-            this.oneButton.Size = new System.Drawing.Size(120, 100);
-            this.oneButton.TabIndex = 2;
-            this.oneButton.Text = "1";
-            this.oneButton.UseVisualStyleBackColor = false;
-            this.oneButton.Click += new System.EventHandler(this.Number_Click);
+            this.one.BackColor = System.Drawing.Color.AliceBlue;
+            this.one.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.one.Location = new System.Drawing.Point(12, 461);
+            this.one.Name = "one";
+            this.one.Size = new System.Drawing.Size(120, 100);
+            this.one.TabIndex = 2;
+            this.one.Text = "1";
+            this.one.UseVisualStyleBackColor = false;
+            this.one.Click += new System.EventHandler(this.Number_Click);
             // 
             // two
             // 
@@ -342,11 +342,13 @@
             this.Controls.Add(this.four);
             this.Controls.Add(this.three);
             this.Controls.Add(this.two);
-            this.Controls.Add(this.oneButton);
-            this.Controls.Add(this.ZeroButton);
+            this.Controls.Add(this.one);
+            this.Controls.Add(this.zero);
             this.Controls.Add(this.Result_Textbox);
+            this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -355,8 +357,8 @@
         #endregion
 
         private System.Windows.Forms.TextBox Result_Textbox;
-        private System.Windows.Forms.Button ZeroButton;
-        private System.Windows.Forms.Button oneButton;
+        private System.Windows.Forms.Button zero;
+        private System.Windows.Forms.Button one;
         private System.Windows.Forms.Button two;
         private System.Windows.Forms.Button three;
         private System.Windows.Forms.Button four;
