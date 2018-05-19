@@ -193,6 +193,10 @@ namespace Calculator
                     equals.Focus();
                     equals.PerformClick();
                     break;
+                case '.':
+                    dec.Focus();
+                    dec.PerformClick();
+                    break;
                 default:
                     break;
             }

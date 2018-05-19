@@ -66,6 +66,7 @@
             // 
             // zero
             // 
+            this.zero.AutoSize = true;
             this.zero.BackColor = System.Drawing.Color.AliceBlue;
             this.zero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.zero.Location = new System.Drawing.Point(138, 567);
@@ -78,6 +79,7 @@
             // 
             // one
             // 
+            this.one.AutoSize = true;
             this.one.BackColor = System.Drawing.Color.AliceBlue;
             this.one.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.one.Location = new System.Drawing.Point(12, 461);
@@ -90,6 +92,7 @@
             // 
             // two
             // 
+            this.two.AutoSize = true;
             this.two.BackColor = System.Drawing.Color.AliceBlue;
             this.two.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.two.Location = new System.Drawing.Point(138, 461);
@@ -102,6 +105,7 @@
             // 
             // three
             // 
+            this.three.AutoSize = true;
             this.three.BackColor = System.Drawing.Color.AliceBlue;
             this.three.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.three.Location = new System.Drawing.Point(264, 461);
@@ -114,6 +118,7 @@
             // 
             // four
             // 
+            this.four.AutoSize = true;
             this.four.BackColor = System.Drawing.Color.AliceBlue;
             this.four.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.four.Location = new System.Drawing.Point(12, 355);
@@ -126,6 +131,7 @@
             // 
             // five
             // 
+            this.five.AutoSize = true;
             this.five.BackColor = System.Drawing.Color.AliceBlue;
             this.five.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.five.Location = new System.Drawing.Point(138, 355);
@@ -138,6 +144,7 @@
             // 
             // six
             // 
+            this.six.AutoSize = true;
             this.six.BackColor = System.Drawing.Color.AliceBlue;
             this.six.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.six.Location = new System.Drawing.Point(264, 355);
@@ -150,6 +157,7 @@
             // 
             // seven
             // 
+            this.seven.AutoSize = true;
             this.seven.BackColor = System.Drawing.Color.AliceBlue;
             this.seven.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.seven.Location = new System.Drawing.Point(12, 249);
@@ -162,6 +170,7 @@
             // 
             // eight
             // 
+            this.eight.AutoSize = true;
             this.eight.BackColor = System.Drawing.Color.AliceBlue;
             this.eight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.eight.Location = new System.Drawing.Point(138, 249);
@@ -174,6 +183,7 @@
             // 
             // nine
             // 
+            this.nine.AutoSize = true;
             this.nine.BackColor = System.Drawing.Color.AliceBlue;
             this.nine.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.nine.Location = new System.Drawing.Point(264, 249);
@@ -186,6 +196,7 @@
             // 
             // plusOrMinus
             // 
+            this.plusOrMinus.AutoSize = true;
             this.plusOrMinus.BackColor = System.Drawing.Color.AliceBlue;
             this.plusOrMinus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.plusOrMinus.Location = new System.Drawing.Point(12, 567);
@@ -198,6 +209,7 @@
             // 
             // dec
             // 
+            this.dec.AutoSize = true;
             this.dec.BackColor = System.Drawing.Color.AliceBlue;
             this.dec.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.dec.Location = new System.Drawing.Point(264, 567);
@@ -210,6 +222,7 @@
             // 
             // divide
             // 
+            this.divide.AutoSize = true;
             this.divide.BackColor = System.Drawing.Color.AliceBlue;
             this.divide.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.divide.Location = new System.Drawing.Point(390, 143);
@@ -222,6 +235,7 @@
             // 
             // multiply
             // 
+            this.multiply.AutoSize = true;
             this.multiply.BackColor = System.Drawing.Color.AliceBlue;
             this.multiply.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.multiply.Location = new System.Drawing.Point(390, 249);
@@ -234,6 +248,7 @@
             // 
             // subtract
             // 
+            this.subtract.AutoSize = true;
             this.subtract.BackColor = System.Drawing.Color.AliceBlue;
             this.subtract.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.subtract.Location = new System.Drawing.Point(390, 355);
@@ -246,6 +261,7 @@
             // 
             // add
             // 
+            this.add.AutoSize = true;
             this.add.BackColor = System.Drawing.Color.AliceBlue;
             this.add.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.add.Location = new System.Drawing.Point(390, 461);
@@ -258,6 +274,7 @@
             // 
             // equals
             // 
+            this.equals.AutoSize = true;
             this.equals.BackColor = System.Drawing.Color.AliceBlue;
             this.equals.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.equals.Location = new System.Drawing.Point(390, 567);
@@ -270,6 +287,7 @@
             // 
             // clear
             // 
+            this.clear.AutoSize = true;
             this.clear.BackColor = System.Drawing.Color.AliceBlue;
             this.clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.clear.Location = new System.Drawing.Point(12, 143);
@@ -282,6 +300,7 @@
             // 
             // backspace
             // 
+            this.backspace.AutoSize = true;
             this.backspace.BackColor = System.Drawing.Color.AliceBlue;
             this.backspace.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.backspace.Location = new System.Drawing.Point(264, 143);
@@ -294,6 +313,7 @@
             // 
             // clear_entry
             // 
+            this.clear_entry.AutoSize = true;
             this.clear_entry.BackColor = System.Drawing.Color.AliceBlue;
             this.clear_entry.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.clear_entry.Location = new System.Drawing.Point(138, 143);
@@ -307,13 +327,14 @@
             // equation
             // 
             this.equation.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.equation.AutoSize = true;
             this.equation.BackColor = System.Drawing.SystemColors.Control;
             this.equation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.equation.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.equation.Location = new System.Drawing.Point(20, 79);
+            this.equation.Location = new System.Drawing.Point(22, 79);
             this.equation.Name = "equation";
             this.equation.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.equation.Size = new System.Drawing.Size(480, 42);
+            this.equation.Size = new System.Drawing.Size(0, 37);
             this.equation.TabIndex = 21;
             this.equation.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -322,7 +343,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(522, 679);
+            this.ClientSize = new System.Drawing.Size(524, 679);
             this.Controls.Add(this.equation);
             this.Controls.Add(this.clear_entry);
             this.Controls.Add(this.backspace);
