@@ -50,6 +50,7 @@
             this.backspace = new System.Windows.Forms.Button();
             this.clear_entry = new System.Windows.Forms.Button();
             this.equation = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Result_Textbox
@@ -73,9 +74,16 @@
             this.zero.Name = "zero";
             this.zero.Size = new System.Drawing.Size(120, 100);
             this.zero.TabIndex = 1;
+            this.zero.TabStop = false;
             this.zero.Text = "0";
             this.zero.UseVisualStyleBackColor = false;
             this.zero.Click += new System.EventHandler(this.Number_Click);
+            this.zero.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.zero.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
+            this.zero.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mouse_Down_Color);
+            this.zero.MouseLeave += new System.EventHandler(this.Color_Default);
+            this.zero.MouseHover += new System.EventHandler(this.Hover_Color_Change);
+            this.zero.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Mouse_Up_Color);
             // 
             // one
             // 
@@ -86,9 +94,16 @@
             this.one.Name = "one";
             this.one.Size = new System.Drawing.Size(120, 100);
             this.one.TabIndex = 2;
+            this.one.TabStop = false;
             this.one.Text = "1";
             this.one.UseVisualStyleBackColor = false;
             this.one.Click += new System.EventHandler(this.Number_Click);
+            this.one.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.one.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
+            this.one.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mouse_Down_Color);
+            this.one.MouseLeave += new System.EventHandler(this.Color_Default);
+            this.one.MouseHover += new System.EventHandler(this.Hover_Color_Change);
+            this.one.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Mouse_Up_Color);
             // 
             // two
             // 
@@ -99,9 +114,16 @@
             this.two.Name = "two";
             this.two.Size = new System.Drawing.Size(120, 100);
             this.two.TabIndex = 3;
+            this.two.TabStop = false;
             this.two.Text = "2";
             this.two.UseVisualStyleBackColor = false;
             this.two.Click += new System.EventHandler(this.Number_Click);
+            this.two.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.two.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
+            this.two.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mouse_Down_Color);
+            this.two.MouseLeave += new System.EventHandler(this.Color_Default);
+            this.two.MouseHover += new System.EventHandler(this.Hover_Color_Change);
+            this.two.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Mouse_Up_Color);
             // 
             // three
             // 
@@ -112,9 +134,16 @@
             this.three.Name = "three";
             this.three.Size = new System.Drawing.Size(120, 100);
             this.three.TabIndex = 4;
+            this.three.TabStop = false;
             this.three.Text = "3";
             this.three.UseVisualStyleBackColor = false;
             this.three.Click += new System.EventHandler(this.Number_Click);
+            this.three.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.three.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
+            this.three.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mouse_Down_Color);
+            this.three.MouseLeave += new System.EventHandler(this.Color_Default);
+            this.three.MouseHover += new System.EventHandler(this.Hover_Color_Change);
+            this.three.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Mouse_Up_Color);
             // 
             // four
             // 
@@ -125,9 +154,16 @@
             this.four.Name = "four";
             this.four.Size = new System.Drawing.Size(120, 100);
             this.four.TabIndex = 5;
+            this.four.TabStop = false;
             this.four.Text = "4";
             this.four.UseVisualStyleBackColor = false;
             this.four.Click += new System.EventHandler(this.Number_Click);
+            this.four.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.four.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
+            this.four.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mouse_Down_Color);
+            this.four.MouseLeave += new System.EventHandler(this.Color_Default);
+            this.four.MouseHover += new System.EventHandler(this.Hover_Color_Change);
+            this.four.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Mouse_Up_Color);
             // 
             // five
             // 
@@ -138,9 +174,16 @@
             this.five.Name = "five";
             this.five.Size = new System.Drawing.Size(120, 100);
             this.five.TabIndex = 6;
+            this.five.TabStop = false;
             this.five.Text = "5";
             this.five.UseVisualStyleBackColor = false;
             this.five.Click += new System.EventHandler(this.Number_Click);
+            this.five.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.five.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
+            this.five.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mouse_Down_Color);
+            this.five.MouseLeave += new System.EventHandler(this.Color_Default);
+            this.five.MouseHover += new System.EventHandler(this.Hover_Color_Change);
+            this.five.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Mouse_Up_Color);
             // 
             // six
             // 
@@ -151,9 +194,16 @@
             this.six.Name = "six";
             this.six.Size = new System.Drawing.Size(120, 100);
             this.six.TabIndex = 7;
+            this.six.TabStop = false;
             this.six.Text = "6";
             this.six.UseVisualStyleBackColor = false;
             this.six.Click += new System.EventHandler(this.Number_Click);
+            this.six.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.six.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
+            this.six.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mouse_Down_Color);
+            this.six.MouseLeave += new System.EventHandler(this.Color_Default);
+            this.six.MouseHover += new System.EventHandler(this.Hover_Color_Change);
+            this.six.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Mouse_Up_Color);
             // 
             // seven
             // 
@@ -164,9 +214,16 @@
             this.seven.Name = "seven";
             this.seven.Size = new System.Drawing.Size(120, 100);
             this.seven.TabIndex = 8;
+            this.seven.TabStop = false;
             this.seven.Text = "7";
             this.seven.UseVisualStyleBackColor = false;
             this.seven.Click += new System.EventHandler(this.Number_Click);
+            this.seven.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.seven.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
+            this.seven.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mouse_Down_Color);
+            this.seven.MouseLeave += new System.EventHandler(this.Color_Default);
+            this.seven.MouseHover += new System.EventHandler(this.Hover_Color_Change);
+            this.seven.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Mouse_Up_Color);
             // 
             // eight
             // 
@@ -177,9 +234,16 @@
             this.eight.Name = "eight";
             this.eight.Size = new System.Drawing.Size(120, 100);
             this.eight.TabIndex = 9;
+            this.eight.TabStop = false;
             this.eight.Text = "8";
             this.eight.UseVisualStyleBackColor = false;
             this.eight.Click += new System.EventHandler(this.Number_Click);
+            this.eight.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.eight.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
+            this.eight.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mouse_Down_Color);
+            this.eight.MouseLeave += new System.EventHandler(this.Color_Default);
+            this.eight.MouseHover += new System.EventHandler(this.Hover_Color_Change);
+            this.eight.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Mouse_Up_Color);
             // 
             // nine
             // 
@@ -190,9 +254,16 @@
             this.nine.Name = "nine";
             this.nine.Size = new System.Drawing.Size(120, 100);
             this.nine.TabIndex = 10;
+            this.nine.TabStop = false;
             this.nine.Text = "9";
             this.nine.UseVisualStyleBackColor = false;
             this.nine.Click += new System.EventHandler(this.Number_Click);
+            this.nine.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.nine.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
+            this.nine.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mouse_Down_Color);
+            this.nine.MouseLeave += new System.EventHandler(this.Color_Default);
+            this.nine.MouseHover += new System.EventHandler(this.Hover_Color_Change);
+            this.nine.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Mouse_Up_Color);
             // 
             // plusOrMinus
             // 
@@ -203,9 +274,16 @@
             this.plusOrMinus.Name = "plusOrMinus";
             this.plusOrMinus.Size = new System.Drawing.Size(120, 100);
             this.plusOrMinus.TabIndex = 11;
+            this.plusOrMinus.TabStop = false;
             this.plusOrMinus.Text = "±";
             this.plusOrMinus.UseVisualStyleBackColor = false;
             this.plusOrMinus.Click += new System.EventHandler(this.PlusOrMinus_Click);
+            this.plusOrMinus.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.plusOrMinus.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
+            this.plusOrMinus.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mouse_Down_Color);
+            this.plusOrMinus.MouseLeave += new System.EventHandler(this.Color_Default);
+            this.plusOrMinus.MouseHover += new System.EventHandler(this.Hover_Color_Change);
+            this.plusOrMinus.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Mouse_Up_Color);
             // 
             // dec
             // 
@@ -216,9 +294,16 @@
             this.dec.Name = "dec";
             this.dec.Size = new System.Drawing.Size(120, 100);
             this.dec.TabIndex = 12;
+            this.dec.TabStop = false;
             this.dec.Text = ".";
             this.dec.UseVisualStyleBackColor = false;
             this.dec.Click += new System.EventHandler(this.Number_Click);
+            this.dec.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.dec.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
+            this.dec.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mouse_Down_Color);
+            this.dec.MouseLeave += new System.EventHandler(this.Color_Default);
+            this.dec.MouseHover += new System.EventHandler(this.Hover_Color_Change);
+            this.dec.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Mouse_Up_Color);
             // 
             // divide
             // 
@@ -229,9 +314,16 @@
             this.divide.Name = "divide";
             this.divide.Size = new System.Drawing.Size(120, 100);
             this.divide.TabIndex = 13;
+            this.divide.TabStop = false;
             this.divide.Text = "÷";
             this.divide.UseVisualStyleBackColor = false;
             this.divide.Click += new System.EventHandler(this.Operator_Click);
+            this.divide.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.divide.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
+            this.divide.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mouse_Down_Color);
+            this.divide.MouseLeave += new System.EventHandler(this.Color_Default);
+            this.divide.MouseHover += new System.EventHandler(this.Hover_Color_Change);
+            this.divide.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Mouse_Up_Color);
             // 
             // multiply
             // 
@@ -242,9 +334,16 @@
             this.multiply.Name = "multiply";
             this.multiply.Size = new System.Drawing.Size(120, 100);
             this.multiply.TabIndex = 14;
+            this.multiply.TabStop = false;
             this.multiply.Text = "x";
             this.multiply.UseVisualStyleBackColor = false;
             this.multiply.Click += new System.EventHandler(this.Operator_Click);
+            this.multiply.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.multiply.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
+            this.multiply.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mouse_Down_Color);
+            this.multiply.MouseLeave += new System.EventHandler(this.Color_Default);
+            this.multiply.MouseHover += new System.EventHandler(this.Hover_Color_Change);
+            this.multiply.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Mouse_Up_Color);
             // 
             // subtract
             // 
@@ -255,9 +354,16 @@
             this.subtract.Name = "subtract";
             this.subtract.Size = new System.Drawing.Size(120, 100);
             this.subtract.TabIndex = 15;
+            this.subtract.TabStop = false;
             this.subtract.Text = "-";
             this.subtract.UseVisualStyleBackColor = false;
             this.subtract.Click += new System.EventHandler(this.Operator_Click);
+            this.subtract.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.subtract.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
+            this.subtract.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mouse_Down_Color);
+            this.subtract.MouseLeave += new System.EventHandler(this.Color_Default);
+            this.subtract.MouseHover += new System.EventHandler(this.Hover_Color_Change);
+            this.subtract.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Mouse_Up_Color);
             // 
             // add
             // 
@@ -268,9 +374,16 @@
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(120, 100);
             this.add.TabIndex = 16;
+            this.add.TabStop = false;
             this.add.Text = "+";
             this.add.UseVisualStyleBackColor = false;
             this.add.Click += new System.EventHandler(this.Operator_Click);
+            this.add.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.add.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
+            this.add.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mouse_Down_Color);
+            this.add.MouseLeave += new System.EventHandler(this.Color_Default);
+            this.add.MouseHover += new System.EventHandler(this.Hover_Color_Change);
+            this.add.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Mouse_Up_Color);
             // 
             // equals
             // 
@@ -281,9 +394,16 @@
             this.equals.Name = "equals";
             this.equals.Size = new System.Drawing.Size(120, 100);
             this.equals.TabIndex = 17;
+            this.equals.TabStop = false;
             this.equals.Text = "=";
             this.equals.UseVisualStyleBackColor = false;
             this.equals.Click += new System.EventHandler(this.Equals_Click);
+            this.equals.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.equals.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
+            this.equals.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mouse_Down_Color);
+            this.equals.MouseLeave += new System.EventHandler(this.Color_Default);
+            this.equals.MouseHover += new System.EventHandler(this.Hover_Color_Change);
+            this.equals.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Mouse_Up_Color);
             // 
             // clear
             // 
@@ -294,9 +414,16 @@
             this.clear.Name = "clear";
             this.clear.Size = new System.Drawing.Size(120, 100);
             this.clear.TabIndex = 18;
+            this.clear.TabStop = false;
             this.clear.Text = "C";
             this.clear.UseVisualStyleBackColor = false;
             this.clear.Click += new System.EventHandler(this.Clear_Click);
+            this.clear.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.clear.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
+            this.clear.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mouse_Down_Color);
+            this.clear.MouseLeave += new System.EventHandler(this.Color_Default);
+            this.clear.MouseHover += new System.EventHandler(this.Hover_Color_Change);
+            this.clear.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Mouse_Up_Color);
             // 
             // backspace
             // 
@@ -307,9 +434,16 @@
             this.backspace.Name = "backspace";
             this.backspace.Size = new System.Drawing.Size(120, 100);
             this.backspace.TabIndex = 19;
+            this.backspace.TabStop = false;
             this.backspace.Text = "⌫";
             this.backspace.UseVisualStyleBackColor = false;
             this.backspace.Click += new System.EventHandler(this.Backspace_Click);
+            this.backspace.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.backspace.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
+            this.backspace.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mouse_Down_Color);
+            this.backspace.MouseLeave += new System.EventHandler(this.Color_Default);
+            this.backspace.MouseHover += new System.EventHandler(this.Hover_Color_Change);
+            this.backspace.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Mouse_Up_Color);
             // 
             // clear_entry
             // 
@@ -320,9 +454,16 @@
             this.clear_entry.Name = "clear_entry";
             this.clear_entry.Size = new System.Drawing.Size(120, 100);
             this.clear_entry.TabIndex = 20;
+            this.clear_entry.TabStop = false;
             this.clear_entry.Text = "CE";
             this.clear_entry.UseVisualStyleBackColor = false;
             this.clear_entry.Click += new System.EventHandler(this.ClearEntry_Click);
+            this.clear_entry.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.clear_entry.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
+            this.clear_entry.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mouse_Down_Color);
+            this.clear_entry.MouseLeave += new System.EventHandler(this.Color_Default);
+            this.clear_entry.MouseHover += new System.EventHandler(this.Hover_Color_Change);
+            this.clear_entry.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Mouse_Up_Color);
             // 
             // equation
             // 
@@ -338,8 +479,18 @@
             this.equation.TabIndex = 21;
             this.equation.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(180, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(134, 25);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "dummyLabel";
+            // 
             // Calculator
             // 
+            this.AcceptButton = this.equals;
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
@@ -366,6 +517,7 @@
             this.Controls.Add(this.one);
             this.Controls.Add(this.zero);
             this.Controls.Add(this.Result_Textbox);
+            this.Controls.Add(this.label1);
             this.KeyPreview = true;
             this.Name = "Calculator";
             this.Text = "Calculator";
@@ -399,6 +551,7 @@
         private System.Windows.Forms.Button backspace;
         private System.Windows.Forms.Button clear_entry;
         private System.Windows.Forms.Label equation;
+        private System.Windows.Forms.Label label1;
     }
 }
 

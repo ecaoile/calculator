@@ -25,11 +25,13 @@ namespace Calculator
 
         private void Number_Click(object sender, EventArgs e)
         {
+            Button b = (Button)sender;
+            //b.BackColor = Color.FromArgb(153, 204, 255);
             if (Result_Textbox.Text == "0" || operation_pressed == true || hit_equals == true)
                 Result_Textbox.Clear();
             operation_pressed = false;
             hit_equals = false;
-            Button b = (Button)sender;
+            
             if (b.Text == ".")
             {
                 if (!Result_Textbox.Text.Contains("."))
@@ -125,81 +127,122 @@ namespace Calculator
 
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == Convert.ToChar(Keys.Return))
-            {
-            
-                equals.Focus();
-                equals.PerformClick();
-            }
+            Result_Textbox.Focus();
+
             switch (e.KeyChar)
             {
                 case '0':
-                    zero.Focus();
+                    //zero.Focus();
                     zero.PerformClick();
+                    //Result_Textbox.Focus();
                     break;
                 case '1':
-                    one.Focus();
+                    //one.Focus();
                     one.PerformClick();
+                    //dummyLabel.Focus();
                     break;
                 case '2':
-                    two.Focus();
+                    //two.Focus();
                     two.PerformClick();
                     break;
                 case '3':
-                    three.Focus();
+                    //three.Focus();
                     three.PerformClick();
                     break;
                 case '4':
-                    four.Focus();
+                    //four.Focus();
                     four.PerformClick();
                     break;
                 case '5':
-                    five.Focus();
+                    //five.Focus();
                     five.PerformClick();
                     break;
                 case '6':
-                    six.Focus();
+                    //six.Focus();
                     six.PerformClick();
                     break;
                 case '7':
-                    seven.Focus();
+                    //seven.Focus();
                     seven.PerformClick();
                     break;
                 case '8':
-                    eight.Focus();
+                    //eight.Focus();
                     eight.PerformClick();
                     break;
                 case '9':
-                    nine.Focus();
+                    //nine.Focus();
                     nine.PerformClick();
                     break;
                 case '+':
-                    add.Focus();
+                    //add.Focus();
                     add.PerformClick();
                     break;
                 case '-':
-                    subtract.Focus();
+                    //subtract.Focus();
                     subtract.PerformClick();
                     break;
                 case '*':
-                    multiply.Focus();
+                    //multiply.Focus();
                     multiply.PerformClick();
                     break;
                 case '/':
-                    divide.Focus();
+                    //divide.Focus();
                     divide.PerformClick();
                     break;
                 case '=':
-                    equals.Focus();
+                    //equals.Focus();
                     equals.PerformClick();
                     break;
                 case '.':
-                    dec.Focus();
+                    //dec.Focus();
                     dec.PerformClick();
                     break;
                 default:
                     break;
             }
+        }
+
+        private void KeyPress_Color(object sender, KeyPressEventArgs e)
+        {
+            //Button b = (Button)sender;
+            //b.BackColor = Color.FromArgb(153, 204, 255);
+        }
+
+        private void KeyDown_Color(object sender, KeyEventArgs e)
+        {
+            Button b = (Button)sender;
+            b.BackColor = Color.FromArgb(153, 204, 255);
+        }
+
+        private void KeyUp_Color(object sender, KeyEventArgs e)
+        {
+            Button b = (Button)sender;
+            b.BackColor = Color.AliceBlue;
+        }
+
+        private void Hover_Color_Change(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            b.BackColor = Color.FromArgb(204, 230, 255);
+        }
+
+        private void Color_Default(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            b.BackColor = Color.AliceBlue;
+        }
+
+        private void Mouse_Down_Color(object sender, MouseEventArgs e)
+        {
+            Button b = (Button)sender;
+            b.BackColor = Color.FromArgb(153, 204, 255);
+        }
+
+        private void Mouse_Up_Color(object sender, MouseEventArgs e)
+        {
+            Button b = (Button)sender;
+            b.BackColor = Color.AliceBlue;
+            //Result_Textbox.Focus();
         }
     }
 }
