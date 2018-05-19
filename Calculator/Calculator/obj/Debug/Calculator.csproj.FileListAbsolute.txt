@@ -2,9 +2,9 @@ C:\Users\Unfie\codefellows\401\calculator\Calculator\Calculator\bin\Debug\Calcul
 C:\Users\Unfie\codefellows\401\calculator\Calculator\Calculator\bin\Debug\Calculator.exe
 C:\Users\Unfie\codefellows\401\calculator\Calculator\Calculator\bin\Debug\Calculator.pdb
 C:\Users\Unfie\codefellows\401\calculator\Calculator\Calculator\obj\Debug\Calculator.csprojAssemblyReference.cache
-C:\Users\Unfie\codefellows\401\calculator\Calculator\Calculator\obj\Debug\Calculator.Form1.resources
 C:\Users\Unfie\codefellows\401\calculator\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
 C:\Users\Unfie\codefellows\401\calculator\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
 C:\Users\Unfie\codefellows\401\calculator\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
 C:\Users\Unfie\codefellows\401\calculator\Calculator\Calculator\obj\Debug\Calculator.exe
 C:\Users\Unfie\codefellows\401\calculator\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\Users\Unfie\codefellows\401\calculator\Calculator\Calculator\obj\Debug\Calculator.Calculator.resources

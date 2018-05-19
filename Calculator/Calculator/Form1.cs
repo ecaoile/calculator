@@ -10,13 +10,15 @@ using System.Windows.Forms;
 
 namespace Calculator
 {
-    public partial class Form1 : Form
+    public partial class Calculator : Form
     {
         Double value = 0;
         String operation = "";
+        String lastInput = "";
         bool operation_pressed = false;
         bool hit_equals = false;
-        public Form1()
+
+        public Calculator()
         {
             InitializeComponent();
         }
@@ -64,25 +66,28 @@ namespace Calculator
             Button b = (Button)sender;
             if (value != 0)
             {
+                lastInput = lastInput + " " + Result_Textbox.Text;
                 value = Do_Math(operation, Result_Textbox.Text, value);
                 Result_Textbox.Text = value.ToString();
                 operation = b.Text;
-                equation.Text = equation.Text + value + " " + operation;
-
+                equation.Text = lastInput + " " + operation;
             }
+
             else
             {
                 operation = b.Text;
                 value = Double.Parse(Result_Textbox.Text);
                 equation.Text = value + " " + operation;
-
             }
+
+            lastInput = equation.Text;
             operation_pressed = true;
         }
 
         private void Equals_Click(object sender, EventArgs e)
         {
             equation.Text = "";
+            lastInput = "";
             hit_equals = true;
             value = Do_Math(operation, Result_Textbox.Text, value);
             Result_Textbox.Text = value.ToString();
@@ -120,65 +125,71 @@ namespace Calculator
 
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            switch (e.KeyChar.ToString())
+            if (e.KeyChar == Convert.ToChar(Keys.Return))
             {
-                case "0":
+            
+                equals.Focus();
+                equals.PerformClick();
+            }
+            switch (e.KeyChar)
+            {
+                case '0':
                     zero.Focus();
                     zero.PerformClick();
                     break;
-                case "1":
+                case '1':
                     one.Focus();
                     one.PerformClick();
                     break;
-                case "2":
+                case '2':
                     two.Focus();
                     two.PerformClick();
                     break;
-                case "3":
+                case '3':
                     three.Focus();
                     three.PerformClick();
                     break;
-                case "4":
+                case '4':
                     four.Focus();
                     four.PerformClick();
                     break;
-                case "5":
+                case '5':
                     five.Focus();
                     five.PerformClick();
                     break;
-                case "6":
+                case '6':
                     six.Focus();
                     six.PerformClick();
                     break;
-                case "7":
+                case '7':
                     seven.Focus();
                     seven.PerformClick();
                     break;
-                case "8":
+                case '8':
                     eight.Focus();
                     eight.PerformClick();
                     break;
-                case "9":
+                case '9':
                     nine.Focus();
                     nine.PerformClick();
                     break;
-                case "+":
+                case '+':
                     add.Focus();
                     add.PerformClick();
                     break;
-                case "-":
+                case '-':
                     subtract.Focus();
                     subtract.PerformClick();
                     break;
-                case "*":
+                case '*':
                     multiply.Focus();
                     multiply.PerformClick();
                     break;
-                case "/":
+                case '/':
                     divide.Focus();
                     divide.PerformClick();
                     break;
-                case "=":
+                case '=':
                     equals.Focus();
                     equals.PerformClick();
                     break;

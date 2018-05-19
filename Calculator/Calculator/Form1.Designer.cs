@@ -1,6 +1,6 @@
 ﻿namespace Calculator
 {
-    partial class Form1
+    partial class Calculator
     {
         /// <summary>
         /// Required designer variable.
@@ -307,17 +307,17 @@
             // equation
             // 
             this.equation.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.equation.BackColor = System.Drawing.SystemColors.Window;
+            this.equation.BackColor = System.Drawing.SystemColors.Control;
             this.equation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.equation.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.equation.Location = new System.Drawing.Point(415, 85);
+            this.equation.Location = new System.Drawing.Point(20, 79);
             this.equation.Name = "equation";
             this.equation.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.equation.Size = new System.Drawing.Size(95, 42);
+            this.equation.Size = new System.Drawing.Size(480, 42);
             this.equation.TabIndex = 21;
             this.equation.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // Form1
+            // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -346,8 +346,8 @@
             this.Controls.Add(this.zero);
             this.Controls.Add(this.Result_Textbox);
             this.KeyPreview = true;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Calculator";
+            this.Text = "Calculator";
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
