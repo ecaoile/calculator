@@ -64,6 +64,7 @@
             this.Result_Textbox.TabIndex = 0;
             this.Result_Textbox.Text = "0";
             this.Result_Textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Result_Textbox.TextChanged += new System.EventHandler(this.Result_Textbox_TextChanged);
             // 
             // zero
             // 
@@ -78,7 +79,7 @@
             this.zero.Text = "0";
             this.zero.UseVisualStyleBackColor = false;
             this.zero.Click += new System.EventHandler(this.Number_Click);
-            this.zero.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.zero.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Calculator_KeyDown);
             this.zero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Color);
             this.zero.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
             this.zero.Leave += new System.EventHandler(this.Color_Default);
@@ -100,7 +101,7 @@
             this.one.Text = "1";
             this.one.UseVisualStyleBackColor = false;
             this.one.Click += new System.EventHandler(this.Number_Click);
-            this.one.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.one.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Calculator_KeyDown);
             this.one.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Color);
             this.one.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
             this.one.Leave += new System.EventHandler(this.Color_Default);
@@ -122,7 +123,7 @@
             this.two.Text = "2";
             this.two.UseVisualStyleBackColor = false;
             this.two.Click += new System.EventHandler(this.Number_Click);
-            this.two.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.two.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Calculator_KeyDown);
             this.two.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Color);
             this.two.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
             this.two.Leave += new System.EventHandler(this.Color_Default);
@@ -144,7 +145,7 @@
             this.three.Text = "3";
             this.three.UseVisualStyleBackColor = false;
             this.three.Click += new System.EventHandler(this.Number_Click);
-            this.three.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.three.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Calculator_KeyDown);
             this.three.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Color);
             this.three.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
             this.three.Leave += new System.EventHandler(this.Color_Default);
@@ -166,7 +167,7 @@
             this.four.Text = "4";
             this.four.UseVisualStyleBackColor = false;
             this.four.Click += new System.EventHandler(this.Number_Click);
-            this.four.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.four.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Calculator_KeyDown);
             this.four.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Color);
             this.four.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
             this.four.Leave += new System.EventHandler(this.Color_Default);
@@ -188,7 +189,7 @@
             this.five.Text = "5";
             this.five.UseVisualStyleBackColor = false;
             this.five.Click += new System.EventHandler(this.Number_Click);
-            this.five.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.five.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Calculator_KeyDown);
             this.five.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Color);
             this.five.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
             this.five.Leave += new System.EventHandler(this.Color_Default);
@@ -210,7 +211,7 @@
             this.six.Text = "6";
             this.six.UseVisualStyleBackColor = false;
             this.six.Click += new System.EventHandler(this.Number_Click);
-            this.six.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.six.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Calculator_KeyDown);
             this.six.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Color);
             this.six.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
             this.six.Leave += new System.EventHandler(this.Color_Default);
@@ -232,7 +233,7 @@
             this.seven.Text = "7";
             this.seven.UseVisualStyleBackColor = false;
             this.seven.Click += new System.EventHandler(this.Number_Click);
-            this.seven.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.seven.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Calculator_KeyDown);
             this.seven.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Color);
             this.seven.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
             this.seven.Leave += new System.EventHandler(this.Color_Default);
@@ -254,7 +255,7 @@
             this.eight.Text = "8";
             this.eight.UseVisualStyleBackColor = false;
             this.eight.Click += new System.EventHandler(this.Number_Click);
-            this.eight.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.eight.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Calculator_KeyDown);
             this.eight.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Color);
             this.eight.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
             this.eight.Leave += new System.EventHandler(this.Color_Default);
@@ -276,7 +277,7 @@
             this.nine.Text = "9";
             this.nine.UseVisualStyleBackColor = false;
             this.nine.Click += new System.EventHandler(this.Number_Click);
-            this.nine.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.nine.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Calculator_KeyDown);
             this.nine.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Color);
             this.nine.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
             this.nine.Leave += new System.EventHandler(this.Color_Default);
@@ -298,7 +299,7 @@
             this.plusOrMinus.Text = "±";
             this.plusOrMinus.UseVisualStyleBackColor = false;
             this.plusOrMinus.Click += new System.EventHandler(this.PlusOrMinus_Click);
-            this.plusOrMinus.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.plusOrMinus.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Calculator_KeyDown);
             this.plusOrMinus.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Color);
             this.plusOrMinus.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
             this.plusOrMinus.Leave += new System.EventHandler(this.Color_Default);
@@ -320,7 +321,7 @@
             this.dec.Text = ".";
             this.dec.UseVisualStyleBackColor = false;
             this.dec.Click += new System.EventHandler(this.Number_Click);
-            this.dec.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.dec.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Calculator_KeyDown);
             this.dec.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Color);
             this.dec.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
             this.dec.Leave += new System.EventHandler(this.Color_Default);
@@ -342,7 +343,7 @@
             this.divide.Text = "÷";
             this.divide.UseVisualStyleBackColor = false;
             this.divide.Click += new System.EventHandler(this.Operator_Click);
-            this.divide.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.divide.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Calculator_KeyDown);
             this.divide.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Color);
             this.divide.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
             this.divide.Leave += new System.EventHandler(this.Color_Default);
@@ -364,7 +365,7 @@
             this.multiply.Text = "x";
             this.multiply.UseVisualStyleBackColor = false;
             this.multiply.Click += new System.EventHandler(this.Operator_Click);
-            this.multiply.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.multiply.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Calculator_KeyDown);
             this.multiply.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Color);
             this.multiply.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
             this.multiply.Leave += new System.EventHandler(this.Color_Default);
@@ -386,7 +387,7 @@
             this.subtract.Text = "-";
             this.subtract.UseVisualStyleBackColor = false;
             this.subtract.Click += new System.EventHandler(this.Operator_Click);
-            this.subtract.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.subtract.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Calculator_KeyDown);
             this.subtract.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Color);
             this.subtract.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
             this.subtract.Leave += new System.EventHandler(this.Color_Default);
@@ -408,7 +409,7 @@
             this.add.Text = "+";
             this.add.UseVisualStyleBackColor = false;
             this.add.Click += new System.EventHandler(this.Operator_Click);
-            this.add.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.add.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Calculator_KeyDown);
             this.add.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Color);
             this.add.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
             this.add.Leave += new System.EventHandler(this.Color_Default);
@@ -430,7 +431,7 @@
             this.equals.Text = "=";
             this.equals.UseVisualStyleBackColor = false;
             this.equals.Click += new System.EventHandler(this.Equals_Click);
-            this.equals.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.equals.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Calculator_KeyDown);
             this.equals.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Color);
             this.equals.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
             this.equals.Leave += new System.EventHandler(this.Color_Default);
@@ -452,7 +453,7 @@
             this.clear.Text = "C";
             this.clear.UseVisualStyleBackColor = false;
             this.clear.Click += new System.EventHandler(this.Clear_Click);
-            this.clear.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.clear.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Calculator_KeyDown);
             this.clear.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Color);
             this.clear.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
             this.clear.Leave += new System.EventHandler(this.Color_Default);
@@ -474,7 +475,7 @@
             this.backspace.Text = "⌫";
             this.backspace.UseVisualStyleBackColor = false;
             this.backspace.Click += new System.EventHandler(this.Backspace_Click);
-            this.backspace.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.backspace.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Calculator_KeyDown);
             this.backspace.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Color);
             this.backspace.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
             this.backspace.Leave += new System.EventHandler(this.Color_Default);
@@ -496,7 +497,7 @@
             this.clear_entry.Text = "CE";
             this.clear_entry.UseVisualStyleBackColor = false;
             this.clear_entry.Click += new System.EventHandler(this.ClearEntry_Click);
-            this.clear_entry.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Color);
+            this.clear_entry.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Calculator_KeyDown);
             this.clear_entry.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Color);
             this.clear_entry.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyUp_Color);
             this.clear_entry.Leave += new System.EventHandler(this.Color_Default);

@@ -26,7 +26,6 @@ namespace Calculator
         private void Number_Click(object sender, EventArgs e)
         {
             Button b = (Button)sender;
-            //b.BackColor = Color.FromArgb(153, 204, 255);
             if (Result_Textbox.Text == "0" || operation_pressed == true || hit_equals == true)
             {
                 Result_Textbox.Clear();
@@ -99,7 +98,6 @@ namespace Calculator
             value = Do_Math(operation, Result_Textbox.Text, value);
             Result_Textbox.Text = value.ToString();
             operation = "";
-            value = 0;
         }
 
         private void ClearEntry_Click(object sender, EventArgs e)
@@ -125,6 +123,7 @@ namespace Calculator
 
         private void Backspace_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("backspace clicked");
             if (!String.IsNullOrEmpty(Result_Textbox.Text))
                 Result_Textbox.Text = Result_Textbox.Text.Remove(Result_Textbox.Text.Length - 1);
             if (String.IsNullOrEmpty(Result_Textbox.Text))
@@ -133,172 +132,98 @@ namespace Calculator
 
         private void Calculator_KeyPress(object sender, KeyPressEventArgs e)
         {
-            
-            if (e.KeyChar == Convert.ToChar(Keys.Return) || e.KeyChar == Convert.ToChar(Keys.Enter))
-            {
-                //equation.Focus();
-                equals.PerformClick();
-            }
-            if (e.KeyChar == Convert.ToChar(Keys.Delete))
-            {
-                backspace.PerformClick();
-            }
-            //equation.Focus();
+            if (e.KeyChar == (Char)Keys.Delete)
+                MessageBox.Show("DELETE Pressed");
             switch (e.KeyChar)
             {
                 case '0':
-                    //zero.Focus();
+                    zero.Focus();
                     zero.PerformClick();
                     break;
                 case '1':
-                    //one.Focus();
+                    one.Focus();
                     one.PerformClick();
                     break;
                 case '2':
-                    //two.Focus();
+                    two.Focus();
                     two.PerformClick();
                     break;
                 case '3':
-                    //three.Focus();
+                    three.Focus();
                     three.PerformClick();
                     break;
                 case '4':
-                    //four.Focus();
+                    four.Focus();
                     four.PerformClick();
                     break;
                 case '5':
-                    //five.Focus();
+                    five.Focus();
                     five.PerformClick();
                     break;
                 case '6':
-                    //six.Focus();
+                    six.Focus();
                     six.PerformClick();
                     break;
                 case '7':
-                    //seven.Focus();
+                    seven.Focus();
                     seven.PerformClick();
                     break;
                 case '8':
-                    //eight.Focus();
+                    eight.Focus();
                     eight.PerformClick();
                     break;
                 case '9':
-                    //nine.Focus();
+                    nine.Focus();
                     nine.PerformClick();
                     break;
                 case '+':
-                    //add.Focus();
+                    add.Focus();
                     add.PerformClick();
                     break;
                 case '-':
-                    //subtract.Focus();
+                    subtract.Focus();
                     subtract.PerformClick();
                     break;
                 case '*':
-                    //multiply.Focus();
+                    multiply.Focus();
                     multiply.PerformClick();
                     break;
                 case '/':
-                    //divide.Focus();
+                    divide.Focus();
                     divide.PerformClick();
                     break;
                 case '=':
-                    //equals.Focus();
+                    equals.Focus();
                     equals.PerformClick();
                     break;
                 case '.':
-                    //dec.Focus();
+                    dec.Focus();
                     dec.PerformClick();
+                    break;
+                case '\r':
+                    equals.Focus();
+                    equals.PerformClick();
                     break;
                 default:
                     break;
             }
-            //equation.Focus();
         }
 
         private void KeyPress_Color(object sender, KeyPressEventArgs e)
         {
             //Button b = (Button)sender;
-            //b.BackColor = Color.FromArgb(153, 204, 255);
+            // b.BackColor = Color.FromArgb(153, 204, 255);
             //equation.Focus();
         }
 
-        private void KeyDown_Color(object sender, KeyEventArgs e)
+        private void Calculator_KeyDown(object sender, KeyEventArgs e)
         {
+            if (e.KeyCode == Keys.Delete)
+            {
+                backspace.PerformClick();
+                MessageBox.Show("aw shit wtfbq");
+            }
 
-            //switch (Convert.ToChar(e.KeyCode))
-            //{
-            //    case '0':
-            //        //zero.Focus();
-            //        zero.BackColor = Color.FromArgb(153, 204, 255);
-            //        //Result_Textbox.Focus();
-            //        break;
-            //    case '1':
-            //       // one.Focus();
-            //        one.BackColor = Color.FromArgb(153, 204, 255);
-            //        //dummyLabel.Focus();
-            //        break;
-            //    case '2':
-            //        //two.Focus();
-            //        two.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '3':
-            //        //three.Focus();
-            //        three.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '4':
-            //        //four.Focus();
-            //        //four.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '5':
-            //        //five.Focus();
-            //        five.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '6':
-            //        //six.Focus();
-            //        six.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '7':
-            //        //seven.Focus();
-            //        seven.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '8':
-            //        //eight.Focus();
-            //        eight.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '9':
-            //        //nine.Focus();
-            //        nine.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '+':
-            //        //add.Focus();
-            //        add.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '-':
-            //        //subtract.Focus();
-            //        subtract.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '*':
-            //        //multiply.Focus();
-            //        multiply.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '/':
-            //        //divide.Focus();
-            //        divide.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '=':
-            //        //equals.Focus();
-            //        equals.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '.':
-            //        //dec.Focus();
-            //        dec.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    default:
-            //        //equals.Focus();
-            //        equals.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //}
             Button b = (Button)sender;
             b.BackColor = Color.FromArgb(153, 204, 255);
         }
@@ -307,6 +232,8 @@ namespace Calculator
         {
             Button b = (Button)sender;
             b.BackColor = Color.AliceBlue;
+            if (e.KeyCode == Keys.Delete)
+                MessageBox.Show("Del");
         }
 
         private void Hover_Color_Change(object sender, EventArgs e)
@@ -332,6 +259,29 @@ namespace Calculator
             Button b = (Button)sender;
             b.BackColor = Color.AliceBlue;
             equation.Focus();
+        }
+
+        private void Result_Textbox_TextChanged(object sender, EventArgs e)
+        {
+            Result_Textbox.SelectionStart = Result_Textbox.MaxLength - 1;
+            Result_Textbox.SelectionLength = 0;
+        }
+
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.Delete)
+            {
+                OnKeyPress(new KeyPressEventArgs((Char)Keys.Delete));
+                backspace.Focus();
+                MessageBox.Show("dsajlkjadk");
+
+            }
+            if (keyData == Keys.Enter)
+            {
+                OnKeyPress(new KeyPressEventArgs((Char)Keys.Enter));
+                equals.Focus();
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
         }
     }
 }
