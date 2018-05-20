@@ -28,7 +28,10 @@ namespace Calculator
             Button b = (Button)sender;
             //b.BackColor = Color.FromArgb(153, 204, 255);
             if (Result_Textbox.Text == "0" || operation_pressed == true || hit_equals == true)
+            {
                 Result_Textbox.Clear();
+            }
+
             operation_pressed = false;
             hit_equals = false;
             
@@ -66,24 +69,26 @@ namespace Calculator
         private void Operator_Click(object sender, EventArgs e)
         {
             Button b = (Button)sender;
-            if (value != 0)
+            if (operation_pressed == false)
             {
-                lastInput = lastInput + " " + Result_Textbox.Text;
-                value = Do_Math(operation, Result_Textbox.Text, value);
-                Result_Textbox.Text = value.ToString();
-                operation = b.Text;
-                equation.Text = lastInput + " " + operation;
-            }
+                if (value != 0)
+                {
+                    lastInput = lastInput + " " + Result_Textbox.Text;
+                    value = Do_Math(operation, Result_Textbox.Text, value);
+                    Result_Textbox.Text = value.ToString();
+                    operation = b.Text;
+                    equation.Text = lastInput + " " + operation;
+                }
 
-            else
-            {
-                operation = b.Text;
-                value = Double.Parse(Result_Textbox.Text);
-                equation.Text = value + " " + operation;
+                else
+                {
+                    operation = b.Text;
+                    value = Double.Parse(Result_Textbox.Text);
+                    equation.Text = value + " " + operation;
+                }
+                lastInput = equation.Text;
+                operation_pressed = true;
             }
-
-            lastInput = equation.Text;
-            operation_pressed = true;
         }
 
         private void Equals_Click(object sender, EventArgs e)
@@ -94,6 +99,7 @@ namespace Calculator
             value = Do_Math(operation, Result_Textbox.Text, value);
             Result_Textbox.Text = value.ToString();
             operation = "";
+            value = 0;
         }
 
         private void ClearEntry_Click(object sender, EventArgs e)
@@ -125,21 +131,28 @@ namespace Calculator
                 Result_Textbox.Text = "0";
         }
 
-        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        private void Calculator_KeyPress(object sender, KeyPressEventArgs e)
         {
-            Result_Textbox.Focus();
-
+            
+            if (e.KeyChar == Convert.ToChar(Keys.Return) || e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                //equation.Focus();
+                equals.PerformClick();
+            }
+            if (e.KeyChar == Convert.ToChar(Keys.Delete))
+            {
+                backspace.PerformClick();
+            }
+            //equation.Focus();
             switch (e.KeyChar)
             {
                 case '0':
                     //zero.Focus();
                     zero.PerformClick();
-                    //Result_Textbox.Focus();
                     break;
                 case '1':
                     //one.Focus();
                     one.PerformClick();
-                    //dummyLabel.Focus();
                     break;
                 case '2':
                     //two.Focus();
@@ -200,16 +213,92 @@ namespace Calculator
                 default:
                     break;
             }
+            //equation.Focus();
         }
 
         private void KeyPress_Color(object sender, KeyPressEventArgs e)
         {
             //Button b = (Button)sender;
             //b.BackColor = Color.FromArgb(153, 204, 255);
+            //equation.Focus();
         }
 
         private void KeyDown_Color(object sender, KeyEventArgs e)
         {
+
+            //switch (Convert.ToChar(e.KeyCode))
+            //{
+            //    case '0':
+            //        //zero.Focus();
+            //        zero.BackColor = Color.FromArgb(153, 204, 255);
+            //        //Result_Textbox.Focus();
+            //        break;
+            //    case '1':
+            //       // one.Focus();
+            //        one.BackColor = Color.FromArgb(153, 204, 255);
+            //        //dummyLabel.Focus();
+            //        break;
+            //    case '2':
+            //        //two.Focus();
+            //        two.BackColor = Color.FromArgb(153, 204, 255);
+            //        break;
+            //    case '3':
+            //        //three.Focus();
+            //        three.BackColor = Color.FromArgb(153, 204, 255);
+            //        break;
+            //    case '4':
+            //        //four.Focus();
+            //        //four.BackColor = Color.FromArgb(153, 204, 255);
+            //        break;
+            //    case '5':
+            //        //five.Focus();
+            //        five.BackColor = Color.FromArgb(153, 204, 255);
+            //        break;
+            //    case '6':
+            //        //six.Focus();
+            //        six.BackColor = Color.FromArgb(153, 204, 255);
+            //        break;
+            //    case '7':
+            //        //seven.Focus();
+            //        seven.BackColor = Color.FromArgb(153, 204, 255);
+            //        break;
+            //    case '8':
+            //        //eight.Focus();
+            //        eight.BackColor = Color.FromArgb(153, 204, 255);
+            //        break;
+            //    case '9':
+            //        //nine.Focus();
+            //        nine.BackColor = Color.FromArgb(153, 204, 255);
+            //        break;
+            //    case '+':
+            //        //add.Focus();
+            //        add.BackColor = Color.FromArgb(153, 204, 255);
+            //        break;
+            //    case '-':
+            //        //subtract.Focus();
+            //        subtract.BackColor = Color.FromArgb(153, 204, 255);
+            //        break;
+            //    case '*':
+            //        //multiply.Focus();
+            //        multiply.BackColor = Color.FromArgb(153, 204, 255);
+            //        break;
+            //    case '/':
+            //        //divide.Focus();
+            //        divide.BackColor = Color.FromArgb(153, 204, 255);
+            //        break;
+            //    case '=':
+            //        //equals.Focus();
+            //        equals.BackColor = Color.FromArgb(153, 204, 255);
+            //        break;
+            //    case '.':
+            //        //dec.Focus();
+            //        dec.BackColor = Color.FromArgb(153, 204, 255);
+            //        break;
+            //    default:
+            //        //equals.Focus();
+            //        equals.BackColor = Color.FromArgb(153, 204, 255);
+            //        break;
+            //}
             Button b = (Button)sender;
             b.BackColor = Color.FromArgb(153, 204, 255);
         }
@@ -242,7 +331,7 @@ namespace Calculator
         {
             Button b = (Button)sender;
             b.BackColor = Color.AliceBlue;
-            //Result_Textbox.Focus();
+            equation.Focus();
         }
     }
 }
