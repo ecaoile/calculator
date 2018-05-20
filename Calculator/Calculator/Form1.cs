@@ -118,12 +118,10 @@ namespace Calculator
                 Result_Textbox.Text = Result_Textbox.Text.Substring(1);
             else
                 Result_Textbox.Text = "-" + Result_Textbox.Text;
-
         }
 
         private void Backspace_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("backspace clicked");
             if (!String.IsNullOrEmpty(Result_Textbox.Text))
                 Result_Textbox.Text = Result_Textbox.Text.Remove(Result_Textbox.Text.Length - 1);
             if (String.IsNullOrEmpty(Result_Textbox.Text))
@@ -132,8 +130,12 @@ namespace Calculator
 
         private void Calculator_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == (Char)Keys.Delete)
-                MessageBox.Show("DELETE Pressed");
+            if (e.KeyChar == Convert.ToChar(Keys.Back))
+            {
+                backspace.Focus();
+                backspace.PerformClick();
+            }
+
             switch (e.KeyChar)
             {
                 case '0':
@@ -212,18 +214,12 @@ namespace Calculator
         private void KeyPress_Color(object sender, KeyPressEventArgs e)
         {
             //Button b = (Button)sender;
-            // b.BackColor = Color.FromArgb(153, 204, 255);
+            //b.BackColor = Color.FromArgb(153, 204, 255);
             //equation.Focus();
         }
 
         private void Calculator_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Delete)
-            {
-                backspace.PerformClick();
-                MessageBox.Show("aw shit wtfbq");
-            }
-
             Button b = (Button)sender;
             b.BackColor = Color.FromArgb(153, 204, 255);
         }
@@ -232,8 +228,6 @@ namespace Calculator
         {
             Button b = (Button)sender;
             b.BackColor = Color.AliceBlue;
-            if (e.KeyCode == Keys.Delete)
-                MessageBox.Show("Del");
         }
 
         private void Hover_Color_Change(object sender, EventArgs e)
@@ -269,18 +263,12 @@ namespace Calculator
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
-            if (keyData == Keys.Delete)
-            {
-                OnKeyPress(new KeyPressEventArgs((Char)Keys.Delete));
-                backspace.Focus();
-                MessageBox.Show("dsajlkjadk");
+            if (keyData == Keys.Back)
+                OnKeyPress(new KeyPressEventArgs((Char)Keys.Back));
 
-            }
             if (keyData == Keys.Enter)
-            {
                 OnKeyPress(new KeyPressEventArgs((Char)Keys.Enter));
-                equals.Focus();
-            }
+            
             return base.ProcessCmdKey(ref msg, keyData);
         }
     }
