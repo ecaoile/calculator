@@ -92,12 +92,12 @@ namespace Calculator
 
         private void Equals_Click(object sender, EventArgs e)
         {
-            equation.Text = "";
-            lastInput = "";
-            hit_equals = true;
             value = Do_Math(operation, Result_Textbox.Text, value);
             Result_Textbox.Text = value.ToString();
+            equation.Text = "";
+            lastInput = "";
             operation = "";
+            hit_equals = true;
         }
 
         private void ClearEntry_Click(object sender, EventArgs e)
