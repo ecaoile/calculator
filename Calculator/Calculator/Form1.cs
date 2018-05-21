@@ -128,11 +128,12 @@ namespace Calculator
                 Result_Textbox.Text = "0";
         }
 
-        private void Calculator_KeyPress(object sender, KeyPressEventArgs e)
+        private void CalcButton_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == Convert.ToChar(Keys.Back))
             {
                 backspace.Focus();
+                backspace.BackColor = Color.FromArgb(153, 204, 255);
                 backspace.PerformClick();
             }
 
@@ -140,158 +141,92 @@ namespace Calculator
             {
                 case '0':
                     zero.Focus();
+                    zero.BackColor = Color.FromArgb(153, 204, 255);
                     zero.PerformClick();
                     break;
                 case '1':
                     one.Focus();
+                    one.BackColor = Color.FromArgb(153, 204, 255);
                     one.PerformClick();
                     break;
                 case '2':
                     two.Focus();
+                    two.BackColor = Color.FromArgb(153, 204, 255);
                     two.PerformClick();
                     break;
                 case '3':
                     three.Focus();
+                    three.BackColor = Color.FromArgb(153, 204, 255);
                     three.PerformClick();
                     break;
                 case '4':
                     four.Focus();
+                    four.BackColor = Color.FromArgb(153, 204, 255);
                     four.PerformClick();
                     break;
                 case '5':
                     five.Focus();
+                    five.BackColor = Color.FromArgb(153, 204, 255);
                     five.PerformClick();
                     break;
                 case '6':
                     six.Focus();
+                    six.BackColor = Color.FromArgb(153, 204, 255);
                     six.PerformClick();
                     break;
                 case '7':
                     seven.Focus();
+                    seven.BackColor = Color.FromArgb(153, 204, 255);
                     seven.PerformClick();
                     break;
                 case '8':
                     eight.Focus();
+                    eight.BackColor = Color.FromArgb(153, 204, 255);
                     eight.PerformClick();
                     break;
                 case '9':
                     nine.Focus();
+                    nine.BackColor = Color.FromArgb(153, 204, 255);
                     nine.PerformClick();
                     break;
                 case '+':
                     add.Focus();
+                    add.BackColor = Color.FromArgb(153, 204, 255);
                     add.PerformClick();
                     break;
                 case '-':
                     subtract.Focus();
+                    subtract.BackColor = Color.FromArgb(153, 204, 255);
                     subtract.PerformClick();
                     break;
                 case '*':
                     multiply.Focus();
+                    multiply.BackColor = Color.FromArgb(153, 204, 255);
                     multiply.PerformClick();
                     break;
                 case '/':
                     divide.Focus();
+                    divide.BackColor = Color.FromArgb(153, 204, 255);
                     divide.PerformClick();
                     break;
                 case '=':
                     equals.Focus();
+                    equals.BackColor = Color.FromArgb(153, 204, 255);
                     equals.PerformClick();
                     break;
                 case '.':
                     dec.Focus();
+                    dec.BackColor = Color.FromArgb(153, 204, 255);
                     dec.PerformClick();
                     break;
                 case '\r':
                     equals.Focus();
+                    equals.BackColor = Color.FromArgb(153, 204, 255);
                     equals.PerformClick();
                     break;
                 default:
                     break;
             }
-        }
-
-        private void KeyPress_Color(object sender, KeyPressEventArgs e)
-        {
-
-        }
-
-        private void Calculator_KeyDown(object sender, KeyEventArgs e)
-        {
-
-            switch (e.KeyCode)
-            {
-                case Keys.Back:
-                    backspace.BackColor = Color.FromArgb(153, 204, 255);
-                    break;
-                default:
-                    Button b = (Button)sender;
-                    b.BackColor = Color.FromArgb(153, 204, 255);
-                    break;
-            }
-            //if (e.KeyCode == Keys.Back)
-            //{
-            //    backspace.BackColor = Color.FromArgb(153, 204, 255);
-            //}
-
-            //switch (Convert.ToChar(e.KeyCode))
-            //{
-            //    case '0':
-            //        zero.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '1':
-            //        one.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '2':
-            //        two.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '3':
-            //        three.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '4':
-            //        four.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '5':
-            //        five.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '6':
-            //        six.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '7':
-            //        seven.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '8':
-            //        eight.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '9':
-            //        nine.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '+':
-            //        add.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '-':
-            //        subtract.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '*':
-            //        multiply.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '/':
-            //        divide.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '=':
-            //        equals.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '.':
-            //        dec.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    case '\r':
-            //        equals.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //    default:
-            //        Button b = (Button)sender;
-            //        b.BackColor = Color.FromArgb(153, 204, 255);
-            //        break;
-            //}
         }
 
         private void KeyUp_Color(object sender, KeyEventArgs e)
@@ -335,7 +270,6 @@ namespace Calculator
         {
             if (keyData == Keys.Back)
                 OnKeyPress(new KeyPressEventArgs((Char)Keys.Back));
-
             if (keyData == Keys.Enter)
                 OnKeyPress(new KeyPressEventArgs((Char)Keys.Enter));
             
