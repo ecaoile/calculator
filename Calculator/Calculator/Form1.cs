@@ -26,6 +26,9 @@ namespace Calculator
         private void Number_Click(object sender, EventArgs e)
         {
             Button b = (Button)sender;
+            if (value != 0)
+                Result_Textbox.Text = value.ToString();
+
             if (Result_Textbox.Text == "0" || operation_pressed == true || hit_equals == true)
             {
                 Result_Textbox.Clear();
@@ -33,7 +36,6 @@ namespace Calculator
 
             operation_pressed = false;
             hit_equals = false;
-            
             if (b.Text == ".")
             {
                 if (!Result_Textbox.Text.Contains("."))
@@ -77,6 +79,7 @@ namespace Calculator
                     Result_Textbox.Text = value.ToString();
                     operation = b.Text;
                     equation.Text = lastInput + " " + operation;
+                    //MessageBox.Show("in the if");
                 }
 
                 else
@@ -84,6 +87,7 @@ namespace Calculator
                     operation = b.Text;
                     value = Double.Parse(Result_Textbox.Text);
                     equation.Text = value + " " + operation;
+                    //MessageBox.Show("in the else");
                 }
                 lastInput = equation.Text;
                 operation_pressed = true;
