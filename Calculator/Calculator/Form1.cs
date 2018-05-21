@@ -118,6 +118,8 @@ namespace Calculator
                 Result_Textbox.Text = Result_Textbox.Text.Substring(1);
             else
                 Result_Textbox.Text = "-" + Result_Textbox.Text;
+            if (hit_equals == true)
+                value = Double.Parse(Result_Textbox.Text);
         }
 
         private void Backspace_Click(object sender, EventArgs e)
